@@ -1,11 +1,11 @@
 # About This Sample
-This sample demonstrates how to first train a model using TensorFlow and Keras, freeze the model and write it to a protobuf file, convert it to UFF, and finally run inference using TensorRT.
+This sample demonstrates how to first train a model using TensorFlow and Keras, freeze the model and write it to a protobuf file, convert it to UFF, and finally run inference using TensorRT5.
 
 # Installing Prerequisites
 1. Make sure you have the python dependencies installed.
     - For python2, run `python2 -m pip install -r requirements.txt` from the top-level of this sample.
     - For python3, run `python3 -m pip install -r requirements.txt` from the top-level of this sample.
-2. Make sure you have the UFF toolkit as well as `graphsurgeon` installed.
+2. Make sure you have the UFF toolkit as well as `graphsurgeon` installed. if not, download it from [here](https://docs.nvidia.com/deeplearning/sdk/tensorrt-install-guide/index.html#installing-tar)
 
 # Running the Sample
 1. Train the model and write out the frozen graph:
