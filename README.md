@@ -14,7 +14,7 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
     ```
 # Create an engine
 
-## use frozen graph
+## 1. use uff file
 1. Convert the .pb file to .uff, using the convert-to-uff utility:
     ```
     $ convert-to-uff ./models/model.pb -o ./models/
