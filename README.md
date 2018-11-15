@@ -12,7 +12,7 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
     $ mkdir models
     $ python train.py
     ```
-# Create a TensorRT inference engine
+# Create an engine
 
 ## use frozen graph
 1. Convert the .pb file to .uff, using the convert-to-uff utility:
@@ -43,3 +43,12 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
     $ python uff2plan.py
     ```
     The data directory needs to be specified only if TensorRT is not installed in the default location.
+    
+ # Run inference
+    ```
+    $ python inference.py
+    ```
+ 
+ 
+ 
+ 
