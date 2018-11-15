@@ -17,7 +17,7 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
 ## use frozen graph
 1. Convert the .pb file to .uff, using the convert-to-uff utility:
     ```
-    convert-to-uff models/model.pb
+    convert-to-uff ./models/model.pb -o ./models/
     ```
     The converter will display information about the input and output nodes, which you can use to the register
     inputs and outputs with the parser. In this case, we already know the details of the input and output nodes
