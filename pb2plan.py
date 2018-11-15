@@ -96,7 +96,7 @@ import pycuda.autoinit
 
 
 ### Settings
-FROZEN_GDEF_PATH = './model/model.pb' # ADJUST
+FROZEN_GDEF_PATH = './models/model.pb' # ADJUST
 ENGINE_PATH = './model.pb.plan' # ADJUST
 INPUT_NODE = 'input_1' # ADJUST
 OUTPUT_NODE = 'dense_1/Softmax' # ADJUST
