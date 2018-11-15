@@ -9,15 +9,15 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
 
 3. Train the model and write out the frozen graph:
     ```
-    mkdir models
-    python train.py
+    $ mkdir models
+    $ python train.py
     ```
 # Create a TensorRT inference engine
 
 ## use frozen graph
 1. Convert the .pb file to .uff, using the convert-to-uff utility:
     ```
-    convert-to-uff ./models/model.pb -o ./models/
+    $ convert-to-uff ./models/model.pb -o ./models/
     ```
     The converter will display information about the input and output nodes, which you can use to the register
     inputs and outputs with the parser. In this case, we already know the details of the input and output nodes
@@ -25,14 +25,14 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
 
 2. Create a TensorRT inference engine from the uff file and run inference:
     ```
-    python uff2plan.py
+    $ python uff2plan.py
     ```
     The data directory needs to be specified only if TensorRT is not installed in the default location.
     
 ## use uff file
 1. Convert the .pb file to .uff, using the convert-to-uff utility:
     ```
-    convert-to-uff models/model.pb
+    $ convert-to-uff models/model.pb
     ```
     The converter will display information about the input and output nodes, which you can use to the register
     inputs and outputs with the parser. In this case, we already know the details of the input and output nodes
@@ -40,6 +40,6 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
 
 2. Create a TensorRT inference engine from the uff file and run inference:
     ```
-    python uff2plan.py
+    $ python uff2plan.py
     ```
     The data directory needs to be specified only if TensorRT is not installed in the default location.
