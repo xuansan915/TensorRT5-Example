@@ -45,9 +45,10 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
     The data directory needs to be specified only if TensorRT is not installed in the default location.
     
  # Run inference
-    ```
-    $ python inference.py
-    ```
+ 
+ ```bashrc
+ $ python inference.py
+ ```
  
  
  
