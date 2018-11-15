@@ -23,14 +23,13 @@ This sample demonstrates how to first train a model using TensorFlow and Keras, 
     inputs and outputs with the parser. In this case, we already know the details of the input and output nodes
     and have included them in the sample.
 
-2. Create a TensorRT inference engine from the uff file and run inference:
+2. Create a TensorRT inference engine from the uff file
     ```
     $ python uff2plan.py
     ```
-    The data directory needs to be specified only if TensorRT is not installed in the default location.
     
 ## 2. use frozen graph
-Create a TensorRT inference engine from the uff file and run inference:
+Create a TensorRT inference engine from the pb file:
 ```
     $ python pb2plan.py
 ```
